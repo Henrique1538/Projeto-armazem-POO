@@ -59,7 +59,12 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.AddToContent(entry.Count, icon);
         }
     }
+ public void Voltar()
+    {
 
+        SceneManager.LoadScene(0);
+
+    }
     public void SetNewInfoContent(IUIInfoContent content)
     {
         if (content == null)
@@ -73,4 +78,14 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
+
+
+
+
+
+
+
 }
+
+
+
